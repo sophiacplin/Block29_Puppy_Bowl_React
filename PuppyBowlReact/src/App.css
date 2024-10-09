@@ -1,0 +1,202 @@
+
+.all-players-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+#main-section {
+  text-align: -webkit-center;
+  font-family: monospace;
+}
+
+#navbar {
+  display: flex;
+  justify-content: right;
+  background-color: #9a9494;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 0 5px;
+  align-content: center;
+  padding: 10px;
+}
+
+.nav-link:hover{
+  background-color: white;
+  color: gray;
+}
+
+
+/* all players page */
+h2 {
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#players-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+  
+}
+
+#player-box {
+  margin: 10px;
+  height: 310px;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid gray;
+  margin: 10px;
+  height: 310px;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 8px rgb(213, 209, 209);
+  font-size: 15px;
+  outline: 3px solid rgb(245, 245, 179);
+}
+
+#player-box > img {
+  width: 120px;
+  height: 150px;
+  border-radius: 50%;
+  align-content: center;
+}
+
+#button-container {
+  display: flex;
+
+}
+
+#button-container > button {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1.3px solid gray;
+  background-color: white;
+}
+
+#button-container > button:hover {
+  color: rgb(164, 159, 159);
+  box-shadow: 2px 2px 2px rgb(188, 186, 186);
+  cursor: pointer;
+}
+
+/* pop up modal for deleting */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darken the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* add form page */
+form {
+  margin: 50px;
+  border: 1px solid gray;
+  width: 450px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  outline: 3px solid pink;
+}
+
+form > h3 {
+  font-size: 1.8em;
+}
+
+label {
+  text-align: justify;
+}
+
+form > button {
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1.3px solid gray;
+  background-color: white;
+}
+
+form > button:hover {
+  color: rgb(164, 159, 159);
+  box-shadow: 2px 2px 2px rgb(188, 186, 186);
+  cursor: pointer;
+}
+
+
+/* single player page */
+.single-player-container {
+  margin: 50px;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-player-container > img {
+  width: 300px;
+  height: 375px;
+  outline: 3px solid rgb(234, 182, 234);
+  align-content: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.single-player-container > button {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1.3px solid gray;
+  background-color: white;
+}
+
+.single-player-container > button:hover {
+  color: rgb(164, 159, 159);
+  box-shadow: 2px 2px 2px rgb(188, 186, 186);
+  cursor: pointer;
+}
